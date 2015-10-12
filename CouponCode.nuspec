@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>CouponCodeBuilder</id>
+    <id>CouponCode</id>
     <version>1.0</version>
     <title>Algorithm Coupon Code c#</title>
     <authors>Powells IT, Ben Powell</authors>
