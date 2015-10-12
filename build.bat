@@ -21,4 +21,4 @@ mkdir Build\lib
 mkdir Build\lib\net40
 mkdir Build\lib\net45
 
-%nuget% pack "src\CouponCode.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+%nuget% pack "src\CouponCodeBuilder.1.0" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
