@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>CouponCodeBuilder</id>
-    <version>$version$</version>
+    <version>1.0</version>
     <title>Algorithm Coupon Code c#</title>
     <authors>Powells IT, Ben Powell</authors>
     <owners>Ben Powell</owners>
@@ -15,6 +15,6 @@
     <tags>coupon code algorithm checksum license licence</tags>
   </metadata>
   <files>
-	<file src="CouponCode\bin\$configuration$\CouponCode.dll" target="lib\net45\" />
+	<file src="CouponCode\bin\Release\CouponCode.dll" target="lib\net45\" />
   </files>
 </package>
