@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CouponCodeBuilder</id>
+    <version>$version$</version>
+    <title>Algorithm Coupon Code c#</title>
+    <authors>Powells IT, Ben Powell</authors>
+    <owners>Ben Powell</owners>
+    <licenseUrl>https://github.com/benpowell/csharp-algorithm-coupon-code/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/benpowell/csharp-algorithm-coupon-code/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a C# port of the Perl CPAN Algorithm::CouponCode.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright &#x00A9; Ben Powell.  All rights reserved.</copyright>
+    <tags>coupon code algorithm checksum license</tags>
+  </metadata>
+  <files>
+	<file src="CouponCode\bin\$configuration$\CouponCode.dll" target="lib\net45\" />
+  </files>
+</package>
