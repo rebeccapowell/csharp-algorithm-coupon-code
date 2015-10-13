@@ -1,6 +1,8 @@
 # csharp-algorithm-coupon-code
 Implementation of Perl's Algorithm::CouponCode in C#
 
+[![benpowell MyGet Build Status](https://www.myget.org/BuildSource/Badge/benpowell?identifier=291bd95d-8539-41ef-9320-3684077676a1)](https://www.myget.org/)
+
 Port of http://search.cpan.org/dist/Algorithm-CouponCode/
 
 Copyright 2011 Grant McLean grantm@cpan.org
