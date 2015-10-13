@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/benpowell/csharp-algorithm-coupon-code/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/benpowell/csharp-algorithm-coupon-code/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This is a C# port of the Perl CPAN Algorithm::CouponCode.</description>
+    <description>This is a C# port of the Perl CPAN Algorithm::CouponCode to generate and validate coupon codes or license keys.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright &#x00A9; Ben Powell.  All rights reserved.</copyright>
     <tags>coupon code algorithm checksum license licence</tags>
