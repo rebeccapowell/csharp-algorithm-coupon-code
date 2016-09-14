@@ -279,7 +279,7 @@ namespace CouponCode
         /// <returns>
         /// The <see cref="char"/>.
         /// </returns>
-        private char CheckDigitAlg1(string data, int check)
+        private char CheckDigitAlg1(string data, long check)
         {
             // check's initial value is the part number (e.g. 3 or above)
             // loop through the data chars
@@ -291,7 +291,7 @@ namespace CouponCode
                         check = (check * 19) + k;
                     });
 
-            return this.symbols[check % 31];
+            return this.symbols[check % (this.symbols.Length -1)];
         }
 
         /// <summary>

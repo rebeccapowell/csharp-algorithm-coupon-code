@@ -42,7 +42,35 @@ namespace CouponCodeTests
             Console.WriteLine(code);
 
             // check code and validation are the same
-            Assert.IsNotNullOrEmpty(output, string.Format("Expected test case {0} to be not null or empty.", counter));
+            Assert.IsNotNull(output, string.Format("Expected test case {0} to be not null or empty.", counter));
+            Assert.AreEqual(code, output, string.Format("Expected test case {0} to ensure that the generated code and validated code match.", counter));
+
+            // assert no bad words
+            var parts = output.Split('-');
+            var contains = badWords.Any(part => parts.Any(item => part.ToUpperInvariant().Contains(item.ToUpperInvariant())));
+            Assert.IsFalse(contains, string.Format("Expected test case {0} to contain no bad words.", counter));
+        }
+
+        /// <summary>
+        /// The generate valid coupon codes also validates.
+        /// </summary>
+        /// <param name="counter">
+        /// The counter.
+        /// </param>
+        [Test, TestCaseSource("GenerateTestCases")]
+        public void GenerateLongerValidCouponCodesAlsoValidates(int counter)
+        {
+            var opts = new Options { PartLength = 10 };
+            var ccb = new CouponCodeBuilder();
+            var badWords = ccb.BadWordsList;
+
+            var code = ccb.Generate(opts);
+            var output = ccb.Validate(code, opts);
+
+            Console.WriteLine(code);
+
+            // check code and validation are the same
+            Assert.IsNotNull(output, string.Format("Expected test case {0} to be not null or empty.", counter));
             Assert.AreEqual(code, output, string.Format("Expected test case {0} to ensure that the generated code and validated code match.", counter));
 
             // assert no bad words
@@ -65,7 +93,7 @@ namespace CouponCodeTests
             var output = ccb.Validate(code, opts);
 
             // check code and validation are the same
-            Assert.IsNotNullOrEmpty(output, string.Format("Expected test case {0} to be not null or empty.", code));
+            Assert.IsNotNull(output, string.Format("Expected test case {0} to be not null or empty.", code));
             Assert.AreEqual(code, output, string.Format("Expected test case {0} to ensure that the generated code and validated code match.", code));
         }
 
