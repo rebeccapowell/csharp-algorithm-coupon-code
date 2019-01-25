@@ -15,13 +15,13 @@
     <tags>coupon code algorithm checksum license</tags>
   </metadata>
   <files>
-	<file src="Powells.CouponCode\bin\Debug\net35\Powells.CouponCode.dll" target="lib\net35\" />
-	<file src="Powells.CouponCode\bin\Debug\net35\Powells.CouponCode.pdb" target="lib\net35\" />
-	<file src="Powells.CouponCode\bin\Debug\net40\Powells.CouponCode.dll" target="lib\net40\" />
-	<file src="Powells.CouponCode\bin\Debug\net40\Powells.CouponCode.pdb" target="lib\net40\" />
-	<file src="Powells.CouponCode\bin\Debug\net45\Powells.CouponCode.dll" target="lib\net45\" />
-	<file src="Powells.CouponCode\bin\Debug\net45\Powells.CouponCode.pdb" target="lib\net45\" />
-	<file src="Powells.CouponCode\bin\Debug\netstandard2.0\Powells.CouponCode.dll" target="lib\netstandard2.0\" />
-	<file src="Powells.CouponCode\bin\Debug\netstandard2.0\Powells.CouponCode.pdb" target="lib\netstandard2.0\" />
+	<file src="bin\Debug\net35\Powells.CouponCode.dll" target="lib\net35\" />
+	<file src="bin\Debug\net35\Powells.CouponCode.pdb" target="lib\net35\" />
+	<file src="bin\Debug\net40\Powells.CouponCode.dll" target="lib\net40\" />
+	<file src="bin\Debug\net40\Powells.CouponCode.pdb" target="lib\net40\" />
+	<file src="bin\Debug\net45\Powells.CouponCode.dll" target="lib\net45\" />
+	<file src="bin\Debug\net45\Powells.CouponCode.pdb" target="lib\net45\" />
+	<file src="bin\Debug\netstandard2.0\Powells.CouponCode.dll" target="lib\netstandard2.0\" />
+	<file src="bin\Debug\netstandard2.0\Powells.CouponCode.pdb" target="lib\netstandard2.0\" />
   </files>
 </package>

@@ -7,8 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powells.CouponCodeTests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91E149F2-0089-4CD9-85AD-7E150F836D7F}"
 	ProjectSection(SolutionItems) = preProject
-		CouponCode.nuspec = CouponCode.nuspec
+		build.bat = build.bat
 		LICENSE.md = LICENSE.md
+		Powells.CouponCode\Powells.CouponCode.nuspec = Powells.CouponCode\Powells.CouponCode.nuspec
 		README.md = README.md
 	EndProjectSection
 EndProject
