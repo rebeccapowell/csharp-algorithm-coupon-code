@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Powells.CouponCode</id>
+    <version>1.0.2</version>
+    <title>Coupon Code Algorithm</title>
+    <authors>Rebecca Powell</authors>
+    <owners>Rebecca Powell</owners>
+    <licenseUrl>https://github.com/rebeccapowell/csharp-algorithm-coupon-code/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/rebeccapowell/csharp-algorithm-coupon-code/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a C# port of the Perl CPAN Algorithm::CouponCode to generate and validate coupon codes or license keys.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright &#x00A9; Rebecca Powell.  All rights reserved.</copyright>
+    <tags>coupon code algorithm checksum license</tags>
+  </metadata>
+  <files>
+	<file src="Powells.CouponCode\bin\Debug\net35\Powells.CouponCodeBuilder.dll" target="lib\net35\" />
+	<file src="Powells.CouponCode\bin\Debug\net35\Powells.CouponCodeBuilder.pdb" target="lib\net35\" />
+	<file src="Powells.CouponCode\bin\Debug\net40\Powells.CouponCodeBuilder.dll" target="lib\net40\" />
+	<file src="Powells.CouponCode\bin\Debug\net40\Powells.CouponCodeBuilder.pdb" target="lib\net40\" />
+	<file src="Powells.CouponCode\bin\Debug\net45\Powells.CouponCodeBuilder.dll" target="lib\net45\" />
+	<file src="Powells.CouponCode\bin\Debug\net45\Powells.CouponCodeBuilder.pdb" target="lib\net45\" />
+	<file src="Powells.CouponCode\bin\Debug\netstandard2.0\Powells.CouponCodeBuilder.dll" target="lib\netstandard2.0\" />
+	<file src="Powells.CouponCode\bin\Debug\netstandard2.0\Powells.CouponCodeBuilder.pdb" target="lib\netstandard2.0\" />
+  </files>
+</package>
