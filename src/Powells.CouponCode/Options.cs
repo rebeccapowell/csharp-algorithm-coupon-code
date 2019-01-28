@@ -1,4 +1,4 @@
-﻿namespace Powells.CouponCode
+﻿namespace Powell.CouponCode
 {
     public class Options
     {

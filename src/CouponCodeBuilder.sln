@@ -5,15 +5,13 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91E149F2-0089-4CD9-85AD-7E150F836D7F}"
 	ProjectSection(SolutionItems) = preProject
-		build.bat = build.bat
 		LICENSE.md = LICENSE.md
-		Powells.CouponCode\Powells.CouponCode.nuspec = Powells.CouponCode\Powells.CouponCode.nuspec
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Powells.CouponCode", "Powells.CouponCode\Powells.CouponCode.csproj", "{2B876823-AC3A-45CE-A39F-D2E1A78B8A72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Powell.CouponCode", "Powells.CouponCode\Powell.CouponCode.csproj", "{2B876823-AC3A-45CE-A39F-D2E1A78B8A72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powells.CouponCodeTests", "Powells.CouponCodeTests\Powells.CouponCodeTests.csproj", "{4EDCD2A8-72C5-445D-9B3C-6CB80D178CA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Powell.CouponCodeTests", "Powells.CouponCodeTests\Powell.CouponCodeTests.csproj", "{CEBEF9EA-AC41-464C-95A9-C3B9BAEAB6C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,10 @@ Global
 		{2B876823-AC3A-45CE-A39F-D2E1A78B8A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B876823-AC3A-45CE-A39F-D2E1A78B8A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B876823-AC3A-45CE-A39F-D2E1A78B8A72}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EDCD2A8-72C5-445D-9B3C-6CB80D178CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EDCD2A8-72C5-445D-9B3C-6CB80D178CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EDCD2A8-72C5-445D-9B3C-6CB80D178CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EDCD2A8-72C5-445D-9B3C-6CB80D178CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBEF9EA-AC41-464C-95A9-C3B9BAEAB6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBEF9EA-AC41-464C-95A9-C3B9BAEAB6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBEF9EA-AC41-464C-95A9-C3B9BAEAB6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBEF9EA-AC41-464C-95A9-C3B9BAEAB6C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,7 +12,7 @@
 using System;
 using System.Security.Cryptography;
 
-namespace Powells.CouponCode
+namespace Powell.CouponCode
 {
     /// <summary>
     /// The secure random.

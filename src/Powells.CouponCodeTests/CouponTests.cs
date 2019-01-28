@@ -1,26 +1,16 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="CouponTests.cs" company="Powells IT">
-//   (c) 2015 Rebecca Powell.
-// </copyright>
-// <summary>
-//   The coupon tests.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using Powells.CouponCode;
 using System;
 using System.Collections;
+using System.Globalization;
 using System.Linq;
-
 using NUnit.Framework;
+using Powell.CouponCode;
 
-namespace Powells.CouponCodeTests
+namespace Powell.CouponCodeTests
 {
     /// <summary>
     /// The coupon tests.
     /// </summary>
-    [TestFixture]
-    public class CouponTests
+    public class CouponCodeTests
     {
         /// <summary>
         /// The generate valid coupon codes also validates.
