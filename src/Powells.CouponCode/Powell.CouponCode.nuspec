@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Powells.CouponCode</id>
+    <id>Powell.CouponCode</id>
     <version>1.0.4</version>
     <title>Coupon Code Algorithm</title>
     <authors>Rebecca Powell</authors>
