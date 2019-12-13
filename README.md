@@ -7,8 +7,6 @@ Install-Package Powell.CouponCode -Version 1.0.3
 
 Supports net35, net40, net45 and netstandard20. netstandard<20 not supported due to System.Security.Cryptography deficit.
 
-[![powells MyGet Build Status](https://www.myget.org/BuildSource/Badge/powells?identifier=24392beb-44a0-4040-b4ed-77529806b35a)](https://www.myget.org/)
-
 Port of http://search.cpan.org/dist/Algorithm-CouponCode/
 
 Copyright 2011 Grant McLean grantm@cpan.org
