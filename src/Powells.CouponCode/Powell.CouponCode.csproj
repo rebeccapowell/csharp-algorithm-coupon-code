@@ -6,6 +6,15 @@
     <TargetFrameworks>net35;net40;net45;netstandard2.0</TargetFrameworks>
     <AssemblyName>Powell.CouponCode</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.5</Version>
+    <Authors>Rebecca Powell</Authors>
+    <Company>Rebecca PowellRebecca Powell</Company>
+    <Description>This is a C# port of the Perl CPAN Algorithm::CouponCode to generate and validate coupon codes or license keys.</Description>
+    <Copyright>Copyright &amp;#x00A9; Rebecca Powell.  All rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/rebeccapowell/csharp-algorithm-coupon-code/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rebeccapowell/csharp-algorithm-coupon-code/</RepositoryUrl>
+    <PackageTags>coupon code algorithm checksum license</PackageTags>
   </PropertyGroup>
 
 </Project>
