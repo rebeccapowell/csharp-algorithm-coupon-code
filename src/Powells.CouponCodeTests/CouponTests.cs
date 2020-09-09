@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using NUnit.Framework;
@@ -12,6 +14,60 @@ namespace Powell.CouponCodeTests
     /// </summary>
     public class CouponCodeTests
     {
+        [Test]
+        public static void BadWordsListCanBeSetByFunction()
+        {
+            var opts = new Options
+            {
+                Parts = 10,
+                PartLength = 5
+            };
+            var ccb = new CouponCodeBuilder
+            {
+                // delegate defined, should invoke
+                // useful for setting this list using an external data source
+                SetBadWordsList = () => new List<string> {"DAMN", "NSFW"}
+            };
+
+            var code = ccb.Generate(opts);
+            var badWords = ccb.BadWordsList;
+            var output = ccb.Validate(code, opts);
+
+            Console.WriteLine(code);
+
+            // check code and validation are the same
+            Assert.That(badWords, Has.Member("DAMN"));
+            Assert.That(badWords, Has.Member("NSFW"));
+            Assert.AreEqual(code, output, "Expected test case to ensure that the generated code and validated code match.");
+
+        }
+
+        [Test]
+        public static void BadWordsListSetAndCheckedForEmptyStrings()
+        {
+            var opts = new Options
+            {
+                Parts = 10,
+                PartLength = 5
+            };
+            var ccb = new CouponCodeBuilder
+            {
+                BadWordsList = new List<string> {"DAMN", "NSFW", string.Empty}
+            };
+
+            var code = ccb.Generate(opts);
+            var badWords = ccb.BadWordsList;
+            var output = ccb.Validate(code, opts);
+
+            Console.WriteLine(code);
+
+            // check code and validation are the same
+            Assert.That(badWords, Has.Member("DAMN"));
+            Assert.That(badWords, Has.Member("NSFW"));
+            Assert.AreEqual(code, output, "Expected test case to ensure that the generated code and validated code match.");
+
+        }
+
         /// <summary>
         /// The generate valid coupon codes also validates.
         /// </summary>

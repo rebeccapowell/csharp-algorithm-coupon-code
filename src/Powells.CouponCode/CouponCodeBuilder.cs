@@ -111,7 +111,7 @@ namespace Powell.CouponCode
         /// </summary>
         public CouponCodeBuilder()
         {
-            this.BadWordsList = "SHPX PHAG JNAX JNAT CVFF PBPX FUVG GJNG GVGF SNEG URYY ZHSS QVPX XABO NEFR FUNT GBFF FYHG GHEQ FYNT PENC CBBC OHGG SRPX OBBO WVFZ WVMM CUNG'".Split(' ');
+            this.BadWordsList = new List<string>("SHPX PHAG JNAX JNAT CVFF PBPX FUVG GJNG GVGF SNEG URYY ZHSS QVPX XABO NEFR FUNT GBFF FYHG GHEQ FYNT PENC CBBC OHGG SRPX OBBO WVFZ WVMM CUNG'".Split(' '));
             this.SetupSymbolsDictionary();
             this.randomNumberGenerator = new SecureRandom();
         }
@@ -119,7 +119,12 @@ namespace Powell.CouponCode
         /// <summary>
         /// Gets or sets the bad words list.
         /// </summary>
-        public string[] BadWordsList { get; set; }
+        public List<string> BadWordsList { get; set; }
+
+        /// <summary>
+        /// Define a delegate for your bad words list
+        /// </summary>
+        public Func<List<string>> SetBadWordsList { get; set; }
 
         /// <summary>
         /// The generate.
@@ -133,6 +138,15 @@ namespace Powell.CouponCode
         public string Generate(Options opts)
         {
             var parts = new List<string>();
+
+            // populate the bad words list with this delegate if it was set;
+            if (this.SetBadWordsList != null)
+            {
+                this.BadWordsList = this.SetBadWordsList.Invoke();
+            }
+
+            // remove empty strings from list
+            this.BadWordsList = this.BadWordsList.Except(new List<string> {string.Empty}).ToList();
 
             // if  plaintext wasn't set then override
             if (string.IsNullOrEmpty(opts.Plaintext))
@@ -305,7 +319,9 @@ namespace Powell.CouponCode
         /// </returns>
         private bool ContainsBadWord(string code)
         {
-            return this.BadWordsList.Any(t => code.ToUpper().IndexOf(t, StringComparison.Ordinal) > -1);
+            return this.BadWordsList
+                .Except(new List<string> { string.Empty })
+                .Any(t => code.ToUpper().IndexOf(t, StringComparison.Ordinal) > -1);
         }
 
         /// <summary>
