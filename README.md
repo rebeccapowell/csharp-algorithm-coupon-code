@@ -1,9 +1,11 @@
 # csharp-algorithm-coupon-code
 Implementation of Perl's Algorithm::CouponCode in C#
 
-Supports net35, net40, net45 and netstandard20. netstandard not supported due to System.Security.Cryptography deficit.
+```
+Install-Package Powell.CouponCode -Version 1.0.3
+```
 
-[![powells MyGet Build Status](https://www.myget.org/BuildSource/Badge/powells?identifier=24392beb-44a0-4040-b4ed-77529806b35a)](https://www.myget.org/)
+Supports net35, net40, net45 and netstandard20. netstandard<20 not supported due to System.Security.Cryptography deficit.
 
 Port of http://search.cpan.org/dist/Algorithm-CouponCode/
 
