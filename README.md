@@ -1,3 +1,5 @@
+![Logo](https://repository-images.githubusercontent.com/44112601/e7646680-3302-11eb-91df-9962cfb40da5)
+
 # csharp-algorithm-coupon-code
 Implementation of Perl's Algorithm::CouponCode in C#
 
