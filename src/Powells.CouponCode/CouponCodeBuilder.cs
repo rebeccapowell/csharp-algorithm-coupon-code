@@ -137,7 +137,7 @@ namespace Powell.CouponCode
         /// </returns>
         public string Generate(Options opts)
         {
-            var parts = new List<string>();
+            List<string> parts;
 
             // populate the bad words list with this delegate if it was set;
             if (this.SetBadWordsList != null)
@@ -158,6 +158,8 @@ namespace Powell.CouponCode
             // generate parts and combine
             do
             {
+                parts = new List<string>();
+                
                 for (var i = 0; i < opts.Parts; i++)
                 {
                     var sb = new StringBuilder();
